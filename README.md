@@ -30,10 +30,11 @@ from megaboat import ParsingContainer
 from megaboat import RespondingContainer
 from megaboat import PositiveRespondingContainer
 from megaboat import MenuManager                                                         from megaboat import MediaManager
-# The 2 functions                                                                        from megaboat import getAPIToken
+# The 2 functions
+from megaboat import getAPIToken
 from megaboat import postMessage2API
 #
-# Tutorial
+# Tutorial demo
 ## 1. Receiving from the wechat
 
 from megaboat import ParsingContainer
@@ -104,9 +105,9 @@ elif msgType == 'link':
 
  
 
-## 2. Sending to the wechat
+## 2. Sending messages to the wechat
 from megaboat import RespondingContainer
-# For your own good, just Find it yourself
+# For your own good, just find it yourself :)
 
 ```
 ### Happy hacking
