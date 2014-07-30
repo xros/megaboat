@@ -5,23 +5,23 @@ megaboat is a lib for Wechat API programming. This is written in python. It has 
 Usage
 -----
 * `
-# Wechat lib [megaboat] Copyright to Alexander Liu
-# The 5 classes
+\# Wechat lib [megaboat] Copyright to Alexander Liu
+\# The 5 classes
 from megaboat import ParsingContainer
 from megaboat import RespondingContainer
 from megaboat import PositiveRespondingContainer
 from megaboat import MenuManager                                                         from megaboat import MediaManager
-# The 2 functions                                                                        from megaboat import getAPIToken
+\# The 2 functions                                                                        from megaboat import getAPIToken
 from megaboat import postMessage2API
 #
-# Tutorial
+\# Tutorial
 ## 1. Receiving from the wechat
 
 from megaboat import ParsingContainer
 pc = ParsingContainer()
 pc.digest(incomingMessage)
 msgType = pc.getElementByTag('MsgType')
-# For text message
+\# For text message
 if msgType == 'text':
     toUserName = pc.getElementByTag('ToUserName')
     fromUserName = pc.getElementByTag('FromUserName')
@@ -29,7 +29,7 @@ if msgType == 'text':
     msgType = pc.getElementByTag('MsgType')
     content = pc.getElementByTag('Content').encode('utf-8').decode('utf-8')
     msgId = pc.getElementByTag('MsgId')
-# For image message
+\# For image message
 elif msgType == 'image':
     toUserName = pc.getElementByTag('ToUserName')
     fromUserName = pc.getElementByTag('FromUserName')
@@ -38,7 +38,7 @@ elif msgType == 'image':
     picUrl = pc.getElementByTag('PicUrl')
     mediaId = pc.getElementByTag('MediaId')
     msgId = pc.getElementByTag('MsgId')
-# For voice message
+\# For voice message
 elif msgType == 'voice':
     toUserName = pc.getElementByTag('ToUserName')
     fromUserName = pc.getElementByTag('FromUserName')
@@ -47,7 +47,7 @@ elif msgType == 'voice':
     mediaId = pc.getElementByTag('MediaId')
     format_ = pc.getElementByTag('Format')
     msgId = pc.getElementByTag('MsgId')
-# For video message
+\# For video message
 elif msgType == 'video':
     toUserName = pc.getElementByTag('ToUserName')
     fromUserName = pc.getElementByTag('FromUserName')
@@ -56,7 +56,7 @@ elif msgType == 'video':
     mediaId = pc.getElementByTag('MediaId')
     thumbMediaId = pc.getElementByTag('ThumbMediaId')
     msgId = pc.getElementByTag('MsgId')
-# For location message
+\# For location message
 elif msgType == 'location':
     toUserName = pc.getElementByTag('ToUserName')
     fromUserName = pc.getElementByTag('FromUserName')
@@ -67,7 +67,7 @@ elif msgType == 'location':
     scale = pc.getElementByTag('Scale')
     label = pc.getElementByTag('Label')
     msgId = pc.getElementByTag('MsgId')
-# For link message
+\# For link message
 elif msgType == 'link':
     toUserName = pc.getElementByTag('ToUserName')
     fromUserName = pc.getElementByTag('FromUserName')
@@ -80,18 +80,18 @@ elif msgType == 'link':
  
  
 
-# Now we have gotten all the messages those wechat passed onto us
+\# Now we have gotten all the messages those wechat passed onto us
 
 
  
 
-## 2. Sending to the wechat
+\## 2. Sending to the wechat
 from megaboat import RespondingContainer
 
 from megaboat import PositiveRespondingContainer
 from megaboat import MenuManager
 from megaboat import MediaManager
-# The 2 functions
+\# The 2 functions
 from megaboat import getAPIToken
 from megaboat import postMessage2API
 #
