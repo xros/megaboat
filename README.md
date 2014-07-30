@@ -13,6 +13,7 @@ Introduction
 * class `MediaManager` helps to post 4 types of media to the wechat server, those include "image, voice, video, thumb"
 * function `getAPIToken` will return a token from the wechat service if you need that. e.g. The class `MenuManger` would need that when creating/deleting menus
 * function `postMessage2API` will use wechat cumstom service (RESTFul) API to pass 6 types of messages to those wechat clients
+
 Usage
 -----
 * It is recommended to try this python module/lib using this way!
