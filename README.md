@@ -16,7 +16,7 @@ Introduction
 Usage
 -----
 * It is recommended to try this python module/lib using this way!
-* ```bash
+* ```sh
 $~ python
 >>> from megaboat import MenuManger
 >>> help(MenuManager)
