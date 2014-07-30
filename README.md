@@ -29,7 +29,8 @@ There is informative documentation out there. Here is a demo down blow about how
 from megaboat import ParsingContainer
 from megaboat import RespondingContainer
 from megaboat import PositiveRespondingContainer
-from megaboat import MenuManager                                                         from megaboat import MediaManager
+from megaboat import MenuManager                                                         
+from megaboat import MediaManager
 # The 2 functions
 from megaboat import getAPIToken
 from megaboat import postMessage2API
