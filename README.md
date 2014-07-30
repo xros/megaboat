@@ -21,7 +21,7 @@ $~ python
 >>> from megaboat import MenuManger
 >>> help(MenuManager)
 ```
-* There is informative documentation out there. Here is a demo down blow about how to use this module in the programming way
+There is informative documentation out there. Here is a demo down blow about how to use this module in the programming way
 ```python
 # Wechat lib [megaboat] Copyright to Alexander Liu
 # The 5 classes
