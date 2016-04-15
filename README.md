@@ -3,6 +3,14 @@ megaboat
 
 megaboat is a lib for Wechat API programming. This is written in python. It has been deployed on many projects such as internet of vehicles, and it works well with many web or internet frameworks such as Tornado, Django, Pyramid, Flask, web.py, cherrypy and etc.. 
 
+
+Installation
+-----
+
+### Install dependencies
+
+`pip install -r requirements.txt`
+
 Introduction
 -----
 * The module has 5 classes and 2 functions. The 5 classes are responsible of wechat events. This module is compatible with 6 types of the wechat messages including 'text, image, voice, video, link, location'. And 'article' will be added soon.
